@@ -3,6 +3,7 @@ import { Configuration, OpenAIApi }  from 'openai';
 import './App.css'
 
 export default function App() {
+  const [prompt, setPrompt] = useState('');
   const configuration = new Configuration({
     apiKey: import.meta.env.VITE_Open_AI_Key,
   });
@@ -21,7 +22,9 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app-main">
+      <h3>Generate an Image using OpenAI API</h3>
+      <input className="app-input" />
       <button onClick={generateImage}>Generate an Image</button>
     </div>
   )
