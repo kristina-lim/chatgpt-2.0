@@ -27,7 +27,8 @@ export default function App() {
       <input 
         className="app-input"
         placeholder="Type something to generate an image"
-        onChange={(evt) => setPrompt(evt.target.value)} />
+        onChange={(evt) => setPrompt(evt.target.value)} 
+      />
       <button onClick={generateImage}>Generate an Image</button>
 
       {result.length > 0 ? <img className="result-img" src={result} alt="result" /> : <></>}
