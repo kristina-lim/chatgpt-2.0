@@ -1,0 +1,19 @@
+.qa-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-area {
+  font-family: Poppins;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.action-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
