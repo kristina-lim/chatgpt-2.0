@@ -79,16 +79,6 @@ export const arrayItems = [
     },
   },
   {
-    name: 'Generate an Image',
-    id: 'generateImage',
-    description: 'Generates an image based on what you type',
-    option: {
-      prompt: "This is a test",
-      n: 1,
-      size: "1024x1024",
-    },
-  },
-  {
     name: 'Movie to Emoji',
     id: 'movieToEmoji',
     description: 'Convert movie titles into emojis',
