@@ -1,7 +1,7 @@
 import React from 'react';
 import './Translation.css';
 
-export default function Translation({ doStuff, generateImage, setInput, result }) {
+export default function Translation({ doStuff, setInput, result }) {
   return (
     <div className="qa-app">
       <textarea 
@@ -10,7 +10,7 @@ export default function Translation({ doStuff, generateImage, setInput, result }
         rows={10}
         onChange={(evt) => setInput(evt.target.value)}
       />
-      <button className="action-btn" onClick={() => {doStuff(); generateImage();}}>
+      <button className="action-btn" onClick={doStuff}>
         DO YOUR THING
       </button>
       <h3 className="result-text">

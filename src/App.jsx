@@ -23,16 +23,6 @@ export default function App() {
     setResult(response.data.choices[0].text);
   };
 
-  const generateImage = async () => {
-    const res = await openai.createImage({
-      prompt: "Say this is a test",
-      n: 1,
-      size: "1024x1024",
-    });
-
-    console.log(res.data.data[0].url);
-  }
-
   return (
     <div className="App">
       {Object.values(option).length === 0 ? <OptionSelection arrayItems={arrayItems} selectOption={selectOption} /> : <Translation doStuff={doStuff} setInput={setInput} generateImage={generateImage} result={result}/>}
